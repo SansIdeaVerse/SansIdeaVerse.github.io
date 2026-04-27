@@ -18,8 +18,10 @@
             padding: 20px;
         }
         header {
-            text-align: center;
-            padding: 50px 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 50px;
             background: rgba(255, 255, 255, 0.2);
             border-radius: 10px;
             margin-bottom: 40px;
@@ -40,7 +42,11 @@
             height: 150px;
             border-radius: 50%;
             border: 5px solid #fff;
-            margin-bottom: 20px;
+            margin-right: 30px;
+            flex-shrink: 0;
+        }
+        .header-text {
+            text-align: left;
         }
         h1 {
             font-size: 2.5em;
@@ -110,12 +116,18 @@
                 padding: 10px;
             }
             header {
-                padding: 30px 0;
+                flex-direction: column;
+                padding: 30px 15px;
                 margin-bottom: 20px;
             }
             .profile-img {
                 width: 120px;
                 height: 120px;
+                margin-right: 0;
+                margin-bottom: 20px;
+            }
+            .header-text {
+                text-align: center;
             }
             h1 {
                 font-size: 2em;
@@ -140,8 +152,10 @@
     <div class="container">
         <header>
             <img src="Img.png" alt="Profile Picture" class="profile-img">
-            <h1>SansIdeaVerse</h1>
-            <p class="bio">Creative developer passionate about building innovative web applications and exploring new ideas in technology.</p>
+            <div class="header-text">
+                <h1>SansIdeaVerse</h1>
+                <p class="bio">Creative developer passionate about building innovative web applications and exploring new ideas in technology.</p>
+            </div>
         </header>
 
         <section class="projects">
