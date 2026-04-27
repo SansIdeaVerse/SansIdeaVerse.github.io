@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SansIdeaVerse - Profile</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #ff7e5f 0%, #feb47b 100%);
+            color: #333;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            padding: 50px 0;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            margin-bottom: 40px;
+            animation: fadeInUp 1.5s ease-out;
+        }
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 5px solid #fff;
+            margin-bottom: 20px;
+        }
+        h1 {
+            font-size: 2.5em;
+            margin: 10px 0;
+            color: #fff;
+        }
+        .bio {
+            font-size: 1.2em;
+            color: #fff;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .project-card {
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            overflow: hidden;
+            transition: transform 0.3s;
+        }
+        .project-card:hover {
+            transform: translateY(-10px) scale(1.05);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+        }
+        .project-img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .project-content {
+            padding: 20px;
+        }
+        .project-title {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+        .project-desc {
+            color: #666;
+            margin-bottom: 15px;
+        }
+        .project-link {
+            display: inline-block;
+            background: #ff7e5f;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        .project-link:hover {
+            background: #e66b4b;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.1);
+            color: #fff;
+            margin-top: 40px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="Img.png" alt="Profile Picture" class="profile-img">
+            <h1>SansIdeaVerse</h1>
+            <p class="bio">Creative developer passionate about building innovative web applications and exploring new ideas in technology.</p>
+        </header>
+
+        <section class="projects">
+            <div class="project-card">
+                <img src="https://via.placeholder.com/300x200" alt="Project 1" class="project-img">
+                <div class="project-content">
+                    <h3 class="project-title">Awesome App 1</h3>
+                    <p class="project-desc">A revolutionary app that does amazing things. Built with modern technologies.</p>
+                    <a href="#" class="project-link">View Project</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="https://via.placeholder.com/300x200" alt="Project 2" class="project-img">
+                <div class="project-content">
+                    <h3 class="project-title">Cool Webpage 2</h3>
+                    <p class="project-desc">An interactive webpage showcasing creative designs and user experiences.</p>
+                    <a href="#" class="project-link">View Project</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="https://via.placeholder.com/300x200" alt="Project 3" class="project-img">
+                <div class="project-content">
+                    <h3 class="project-title">Innovative Tool 3</h3>
+                    <p class="project-desc">A tool that simplifies complex tasks with an intuitive interface.</p>
+                    <a href="#" class="project-link">View Project</a>
+                </div>
+            </div>
+            <!-- Add more project cards as needed -->
+        </section>
+
+        <footer>
+            <p>&copy; 2026 SansIdeaVerse. All rights reserved.</p>
+            <p>Contact: <a href="mailto:santanu.ds.kaggler@gmail.com" style="color: #fff;">santanu.ds.kaggler@gmail.com</a></p>
+        </footer>
+    </div>
+</body>
+</html>
