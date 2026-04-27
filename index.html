@@ -9,7 +9,7 @@
             font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            background: linear-gradient(135deg, #ff7e5f 0%, #feb47b 100%);
+            background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
             color: #333;
         }
         .container {
@@ -20,7 +20,7 @@
         header {
             text-align: center;
             padding: 50px 0;
-            background: rgba(255, 255, 255, 0.1);
+            background: rgba(255, 255, 255, 0.2);
             border-radius: 10px;
             margin-bottom: 40px;
             animation: fadeInUp 1.5s ease-out;
@@ -87,7 +87,7 @@
         }
         .project-link {
             display: inline-block;
-            background: #ff7e5f;
+            background: #3498db;
             color: #fff;
             padding: 10px 20px;
             text-decoration: none;
@@ -95,15 +95,44 @@
             transition: background 0.3s;
         }
         .project-link:hover {
-            background: #e66b4b;
+            background: #2980b9;
         }
         footer {
             text-align: center;
             padding: 20px;
-            background: rgba(255, 255, 255, 0.1);
+            background: rgba(255, 255, 255, 0.2);
             color: #fff;
             margin-top: 40px;
             border-radius: 10px;
+        }
+        @media (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+            header {
+                padding: 30px 0;
+                margin-bottom: 20px;
+            }
+            .profile-img {
+                width: 120px;
+                height: 120px;
+            }
+            h1 {
+                font-size: 2em;
+            }
+            .bio {
+                font-size: 1em;
+            }
+            .projects {
+                grid-template-columns: 1fr;
+                gap: 15px;
+            }
+            .project-content {
+                padding: 15px;
+            }
+            .project-title {
+                font-size: 1.3em;
+            }
         }
     </style>
 </head>
@@ -134,6 +163,14 @@
             </div>
             <div class="project-card">
                 <img src="https://via.placeholder.com/300x200" alt="Project 3" class="project-img">
+                <div class="project-content">
+                    <h3 class="project-title">Innovative Tool 3</h3>
+                    <p class="project-desc">A tool that simplifies complex tasks with an intuitive interface.</p>
+                    <a href="#" class="project-link">View Project</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="https://via.placeholder.com/300x200" alt="Project 4" class="project-img">
                 <div class="project-content">
                     <h3 class="project-title">Innovative Tool 3</h3>
                     <p class="project-desc">A tool that simplifies complex tasks with an intuitive interface.</p>
